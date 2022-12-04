@@ -1,0 +1,15 @@
+buildscript {
+  repositories {
+	jcenter()
+  }
+  dependencies {
+    classpath 'com.blogspot.jvalentino.gradle:ext-demo:1.0.0'
+  }
+}
+
+apply plugin: 'ext-demo'
+
+hello {
+    alpha = 5
+    bravo = 6
+}
